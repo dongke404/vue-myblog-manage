@@ -51,6 +51,11 @@ export default {
           icon: "iconfont icon-extend",
           index: "addphotos",
           title: "添加图片"
+        },
+        {
+          icon: "iconfont icon-extend",
+          index: "addfile",
+          title: "添加文件"
         }
       ]
     };

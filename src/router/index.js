@@ -43,6 +43,12 @@ const routes = [
         component: () => import('../views/addphotos/index.vue'),
         meta: { title: '添加图片' },
       },
+      {
+        path: '/addfile',
+        name: 'Addfile',
+        component: () => import('../views/addfile/index.vue'),
+        meta: { title: '添加文件' },
+      },
     ]
   },
   {

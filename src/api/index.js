@@ -36,3 +36,6 @@ export const getAlbum = () => request(baseurl + '/album')
 
 //添加图片
 export const addPhoto = (album,img) => request(baseurl + '/photo' , {album,img}, 'POST')
+
+//添加资源
+export const addFile = (name,category,fileurl,pwd) => request(baseurl + '/file' , {name,category,fileurl,pwd}, 'POST')
