@@ -23,16 +23,16 @@ export default {
   data() {
     return {
       name: "",
-      icon: "",
-      img: "",
-      description:"",
+      icon: "tag-",
+      img: "/static/images/tag/",
+      description: "",
       iconfontUrl: ""
     };
   },
   methods: {
     onSubmit() {
       return Promise.all([
-        addtag(this.name, this.icon,this.description,this.img),
+        addtag(this.name, this.icon, this.description, this.img),
         addiconfontUrl(this.iconfontUrl)
       ])
         .then(res => {

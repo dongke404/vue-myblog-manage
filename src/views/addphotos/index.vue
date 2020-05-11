@@ -8,25 +8,30 @@
       :label="item.name"
     >{{item.name}}</el-radio>
     <div class="tags-input">图片链接</div>
-    <el-input v-model.trim="img" placeholder></el-input>
+    <el-input v-model="img"></el-input>
     <div class="tags-input"></div>
     <el-button class="editor-btn" type="primary" @click="onSubmit">提交</el-button>
   </div>
 </template>
 
 <script>
-import { getAlbum,addPhoto } from "../../api";
+import { getAlbum, addPhoto } from "../../api";
 
 export default {
   data() {
     return {
       curAlbum: "",
-      img:"",
+      img: "",
       album: []
     };
   },
   mounted() {
     this.togetAlbum();
+  },
+  watch: {
+    curAlbum(value) {
+      this.img = "/static/images/photo/" + value + "/";
+    }
   },
   methods: {
     async togetAlbum() {

@@ -28,32 +28,32 @@ export default {
       collapse: false,
       items: [
         {
-          icon: "iconfont icon-zhiding",
+          icon: "iconfont icon-addarticle",
           index: "publish",
           title: "发表文章"
         },
         {
-          icon: "iconfont icon-tianjia",
+          icon: "iconfont icon-addtalk",
           index: "addtalk",
           title: "随便说说"
         },
         {
-          icon: "iconfont icon-xiugai",
+          icon: "iconfont icon-addtag",
           index: "addtags",
           title: "添加标签"
         },
         {
-          icon: "iconfont icon-xiugai",
+          icon: "iconfont icon-addalbum",
           index: "addalbum",
           title: "添加图集"
         },
         {
-          icon: "iconfont icon-extend",
+          icon: "iconfont icon-addphoto",
           index: "addphotos",
           title: "添加图片"
         },
         {
-          icon: "iconfont icon-extend",
+          icon: "iconfont icon-addfile",
           index: "addfile",
           title: "添加文件"
         }

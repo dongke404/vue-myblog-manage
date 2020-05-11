@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       name: "",
-      img: "",
+      img: "/static/images/photo/album/",
       description: ""
     };
   },

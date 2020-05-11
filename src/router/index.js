@@ -17,7 +17,7 @@ const routes = [
         path: '/publish',
         name: 'Publish',
         component: () => import('../views/publish/index.vue'),
-        meta: { title: '发表文章' },
+        meta: { title: '发表文章', keepAlive: true },
       },
       {
         path: '/addtalk',
@@ -54,13 +54,13 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component:() => import('../views/login/Login.vue'),
+    component: () => import('../views/login/Login.vue'),
   },
 
   {
     path: '*',
     name: 'Error',
-    component:() => import( '../views/error/404.vue')
+    component: () => import('../views/error/404.vue')
   }
 ]
 

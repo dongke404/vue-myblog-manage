@@ -15,7 +15,11 @@ export default function request(url, data = {}, type = 'GET', config = {}) {
     }
     // 2. 如果成功了, 调用resolve(value)
     promise.then(response => {
-      resolve(response.data)
+      if (response.data.status === 0) {
+        resolve(response.data)
+      } else {
+        Message.error(response.data.msg)
+      }
       // 3. 如果失败了, 不调用reject(reason), 而是提示异常信息
     }).catch(error => {
       // reject(error)
