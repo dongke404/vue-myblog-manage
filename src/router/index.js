@@ -49,6 +49,12 @@ const routes = [
         component: () => import('../views/addfile/index.vue'),
         meta: { title: '添加文件' },
       },
+      {
+        path: '/addfriendlink',
+        name: 'addfriendlink',
+        component: () => import('../views/addfriendlink/index.vue'),
+        meta: { title: '添加友链' },
+      },
     ]
   },
   {

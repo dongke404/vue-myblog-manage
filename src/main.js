@@ -10,7 +10,7 @@ import {
   Input
 } from 'element-ui';
 
-Vue.config.productionTip = true
+Vue.config.productionTip = false;
 Vue.use(Button);
 Vue.use(Form);
 Vue.use(FormItem);

@@ -80,7 +80,6 @@ export default {
     },
     async togettags() {
       let res = await gettags();
-      console.log(res);
       if (res.status === 0) {
         this.taglist = res.data;
       }

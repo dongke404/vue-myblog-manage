@@ -56,6 +56,11 @@ export default {
           icon: "iconfont icon-addfile",
           index: "addfile",
           title: "添加文件"
+        },
+        {
+          icon: "iconfont icon-addfile",
+          index: "addfriendlink",
+          title: "添加友链"
         }
       ]
     };
