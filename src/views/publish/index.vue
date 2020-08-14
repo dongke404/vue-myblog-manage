@@ -23,6 +23,12 @@
               <el-radio label="参考"></el-radio>
             </el-radio-group>
           </el-form-item>
+          <el-form-item label="是否公开">
+            <el-radio-group v-model="form.privacy">
+              <el-radio label="公开"></el-radio>
+              <el-radio label="私人"></el-radio>
+            </el-radio-group>
+          </el-form-item>
           <el-form-item label="文章标签">
             <el-checkbox-group v-model="form.tags">
               <el-checkbox
@@ -56,7 +62,8 @@ export default {
         description: "",
         category: "学习",
         origin: "原创",
-        tags: []
+        tags: [],
+        privacy:"公开"
       }
     };
   },
