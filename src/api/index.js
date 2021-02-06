@@ -2,8 +2,8 @@ import request from './request'
 
 
 
-const baseurl='/api'
-// const baseurl = 'http://127.0.0.1:5000'
+// const baseurl='/api'
+const baseurl = 'http://127.0.0.1:5000'
 
 //登陆请求
 export const reqLogin = (loginname, password) => request(baseurl + '/login', { loginname, password }, 'POST')
